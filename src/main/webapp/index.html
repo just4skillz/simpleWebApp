@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="styles.css" />
+        <meta charset="UTF-8" />
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <title>Formular pizza</title>
+    </head>
+    <body>
+	<a name="anyword"></a>
+        <form action="sent.html">
+            <table id="main_table">
+                <tr>
+                    <th colspan="2">Formular Comandă Pizza</th>
+                </tr>
+                <tr>
+                    <td class="row"><img src="user.png" alt="First Name" /> Nume:</td>
+                    <td class="row"><input type="text" id="first_name"></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="user.png" alt="Last name"/> Prenume:</td>
+                    <td class="row"><input type="text" id="last_name"></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="email.png" alt="Email"/> Email:</td>
+                    <td class="row"><input type="email" id="user_email"></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="phone.png" alt="Phone"/> Telefon:</td>
+                    <td class="row"><input type="number" id="user_phone"></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="pizzaa.png" alt="Choose a pizza"/> Alege o pizza:</td>
+                    <td class="row"><select>
+                                        <option value="rustica">Rustică</option>
+                                        <option value="paesana">Paesană</option>
+                                        <option value="carnivora">Carnivoră</option>
+                                        <option value="acapulco">Acapulco</option>
+                                        <option value="Siciliană">Siciliană</option>
+                                        <option value="Romană">Romană</option>
+                                        <option value="calzone">Calzone</option>
+                                        <option value="prosciutto">Prosciutto</option>
+                                    </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="arrow.png" alt="Quantity"/> Cantitate:</td>
+                    <td class="row"><input type="range" id="cantity" min="1" max="20" step="1" /><input type="text" id="number" /></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="delivery.png" alt="Delivery"/> Adresă livrare:</td>
+                    <td><textarea cols="17" rows="4"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="sauce.png" alt="Sauce"/> Alege sos:</td>
+                    <td class="row">
+                        <table id="second_table">
+                            <tr>
+                                <td>
+                                    <input type="checkbox" class="styled" name="sos" value="ketchup">Ketchup<br>
+                                    <input type="checkbox" class="styled" name="sos" value="sosroşii">Sos de roşii<br>
+                                    <input type="checkbox" class="styled" name="sos" value="dulceacrisor">Sos dulce acrişor<br>
+                                    <input type="checkbox" class="styled" name="sos" value="dulceacrisor">Sos iute<br>
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="calendar.png" alt="calendar"/> Alege data livrare: </td>
+                    <td class="row"><input type="date" /></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="time.png" alt="time" /> Alege ora livrare: </td>
+                    <td class="row"><input type="time" value="12:00:00" /></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="topic.png" alt="Observation" /> Observaţii:</td>
+                    <td><textarea cols="17" rows="4" id="notes"></textarea></td>
+                </tr>
+                <tr>
+                    <td class="row"><img src="news.png" alt="News" /> Newsletter: <br>
+                        Doriţi să primiţi emailuri cu ultimele noastre oferte?
+                    </td>
+                    <td>
+                        <input type="radio" name="news" value="da">Da
+                        <input type="radio" name="news" value="nu">Nu
+                    </td>
+                </tr>
+            </table>
+            <input type="submit" id="submit" name="submit" value="Trimite Comanda" />
+        </form>
+    <hr>
+        <table id="third_table" border="1">
+            <tr>
+                <th colspan="2"><img src="sale.png" alt="Our Offer"/> <span class="additional">Oferta noastră de pizza</span></th>
+            </tr>
+            <tr>
+                <td>
+                    <ol type="I">
+                        <li>
+                            Pizza Medie (400 grame)
+                            <ol type="1">
+                                <li> <span class="pizzaname">Rustică</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 10 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, bacon, porumb, ciuperci, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Paesană</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 11 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, bacon, cârnaţi ţărănesti, ceapă, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Carnivoră</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 13 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, salam, şuncă, bacon, cârnaţi tăranesti, ardei, măsline, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Acapulco</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 13 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, şuncă, ciuperci, bacon, cârnaţi ţărănesti, ardei, roşii, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Siciliană</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 10 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, bacon, ceapă, ciuperci, măsline, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Romană</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 11 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, salam picant, ciuperci, măsline, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Calzone</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 10 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, şuncă, ciuperci, cabanos, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Prosciutto</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 11 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente:  sos de roşii, prosciutto crudo, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                     </ol>
+                </td>
+                <td>
+                    <ol type="I">
+                        <li>
+                            Pizza Mare (780 grame)
+                            <ol type="1">
+                                <li><span class="pizzaname">Rustică</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 21 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, bacon, porumb, ciuperci, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Paesană</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 22 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, bacon, cârnaţi ţărăneşti, ceapă, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Carnivora</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 25 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, salam, şunca, bacon, cârnaţi ţărăneşti, ardei, măsline, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Acapulco</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 24 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, şunca, ciuperci, bacon, cârnaţi ţărăneşti, ardei, roşii, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Siciliană</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 19 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, bacon, ceapă, ciuperci, măsline, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Romană</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 23 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, salam picant, ciuperci, măsline, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Calzone</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 22 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente: sos de roşii, şunca, ciuperci, cabanos, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><span class="pizzaname">Prosciutto</span>
+                                    <ul>
+                                        <li class="price">
+                                            Preţ: 21 lei;
+                                        </li>
+                                        <li class="topping">
+                                            Ingrediente:  sos de roşii, prosciutto crudo, mozzarella.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <img src="warning.png" alt="warining" /> <span class="additional"> Informaţii adiţionale: </span>
+                    <ul class="info">
+                        <li>
+                            Pentru fiecare sos se percepe o taxă de 1.5 ron.
+                        </li>
+                        <li>
+                            La comenzi mai mari de 30 ron, transportul este gratuit.
+                        </li>
+                        <li>
+                            Costul ambalajului este de 1 ron.
+                        </li>
+                        <li>
+                            La 5 pizza comandate, a 6-a este din partea casei.
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+		<a href="#anyword">Revino in partea de sus</a>
+		<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $("#number").val(1);
+        $("#cantity").change(function()
+        {
+            $("#number").val($("#cantity").val());
+        });
+
+        $("#notes").val("în cazul în care aveţi anumite observaţii, scrieţi-ne !").css("color","grey");
+        var initialNote = $("#notes").val();
+        $("#notes").focusin(function()
+        {
+            if ($(this).val() == initialNote)
+            {
+                $(this).val('');
+            }
+        });
+
+        $("#notes").blur(function()
+        {
+            if ($(this).val() == '')
+            {
+                $(this).val("în cazul în care aveţi anumite observaţii, scrieţi-ne !").css("color","grey");
+            }
+        });
+        $(".price").bind('mouseenter mouseleave', function(){
+            $(this).toggleClass('bold');
+        });
+    });
+</script>
+</body>
+</html>

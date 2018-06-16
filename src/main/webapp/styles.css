@@ -1,0 +1,48 @@
+body {
+    background-color:#d7ff98;
+    font-family: Helvetica;
+}
+h2 {
+    font-family: Helvetica;
+}
+
+.row {
+    width: 200px;
+}
+
+.styled {
+    font-family: Helvetica;
+}
+
+.price {
+    list-style-image: url(pret.png);
+}
+
+.info {
+    list-style-image: url(order.png);
+}
+
+.topping {
+    list-style-image: url(pizzaa.png);
+}
+#main_table {
+    /*border: 3px solid #ffffbb;*/
+}
+
+#number {
+    width: 20px;
+    margin-left: 10px;
+}
+
+.additional {
+    font-size: 20px;
+}
+
+#submit {
+    background-color: darkcyan;
+    color: azure;
+    height: 40px;
+    width: 500px;
+    border-radius: 10px;
+}
+
