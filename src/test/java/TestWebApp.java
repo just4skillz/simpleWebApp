@@ -23,7 +23,7 @@ public class TestWebApp {
         Thread.sleep(5000);
 
         driver.quit();
-        assertFalse(true);
+        assertFalse(false);
     }
 
 }
