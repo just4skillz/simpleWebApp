@@ -1,7 +1,10 @@
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import static org.testng.Assert.*;
 
 public class TestWebApp {
 
@@ -20,6 +23,7 @@ public class TestWebApp {
         Thread.sleep(5000);
 
         driver.quit();
+        assertFalse(true);
     }
 
 }
