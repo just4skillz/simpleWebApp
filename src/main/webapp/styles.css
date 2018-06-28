@@ -1,5 +1,5 @@
 body {
-    background-color:#d7ff98;
+    background-color:#f4f5f6;
     font-family: Helvetica;
 }
 h2 {
@@ -36,6 +36,12 @@ h2 {
 
 .additional {
     font-size: 20px;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #submit {
