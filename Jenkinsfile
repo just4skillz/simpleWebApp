@@ -6,14 +6,24 @@ pipeline {
             build job: 'build_job'
         }
     }
-    stage('Test stage') {
+    stage('Staging test') {
         steps {
-            build job: 'test_job'
+            build job: 'staging_test_job'
         }
     }
-    stage('Deploy stage') {
+    stage('Staging deploy') {
         steps {
-            build job: 'deploy_job'
+            build job: 'staging_deploy_job'
+        }
+    }
+    stage('Production test') {
+        steps {
+            build job: 'production_test_job'
+        }
+    }
+    stage('Production deploy') {
+        steps {
+            build job: 'production_deploy_job'
         }
     }
   }
