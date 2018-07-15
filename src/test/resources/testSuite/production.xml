@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Example test run">
+<suite name="Production test suite">
     <test name="Simple Test">
         <classes>
             <class name="ProductionWebTests"/>
