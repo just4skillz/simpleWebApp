@@ -19,7 +19,7 @@ public class StagingWebTests {
 
     @Test
     public void stagingTest() throws InterruptedException {
-        driver.get("http://localhost:9091/webapp/index.html");
+        driver.get("http://localhost:9090/stagingWebApp/index.html");
         sleep(1000);
 
         try {

@@ -19,7 +19,7 @@ public class ProductionWebTests {
 
     @Test
     public void productionTest() throws InterruptedException {
-        driver.get("http://localhost:9090/webapp/index.html");
+        driver.get("http://localhost:9090/productionWebApp/index.html");
         sleep(1000);
 
         try {
