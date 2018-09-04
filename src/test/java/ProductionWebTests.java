@@ -4,6 +4,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import java.util.Date;
+
 import static java.lang.Thread.sleep;
 import static org.testng.Assert.assertTrue;
 
@@ -28,5 +30,8 @@ public class ProductionWebTests {
         } finally {
             driver.quit();
         }
+        Date dateTime = new Date();
+        System.out.println("Production test ran successfully at: " + dateTime);
+
     }
 }
