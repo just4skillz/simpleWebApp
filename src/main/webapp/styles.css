@@ -1,6 +1,6 @@
 body {
-    background: linear-gradient(pink, blue);
-    /* background: linear-gradient(blue, yellow); */
+    /* background: linear-gradient(pink, blue); */
+    background: linear-gradient(blue, yellow);
     font-family: Helvetica;
 }
 h2 {
